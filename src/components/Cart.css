@@ -5,13 +5,13 @@ li {
   padding: 10px;
 }
 .cartIcon h3 {
-  border: 1px solid #ccc;
+  border: 1px solid rgb(194, 158, 80);
   border-radius: 20px;
   padding: 10px;
   cursor: pointer;
 }
 .cart-container {
-  border: 1px solid black;
+  border: 1px solid rgb(181, 149, 149);
   border-radius: 10px;
   margin: 20px;
   height: 400px;
@@ -23,18 +23,18 @@ li {
 .cartItem {
   display: flex;
   justify-content: space-between;
-  border: 1px solid black;
+  border: 1px solid rgb(229, 134, 134);
   border-radius: 10px;
   padding: 20px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
-  background: #2f3c7e;
+  background: #79b465;
   color: #fbeaeb;
 }
 .cart-actions {
-  color: white;
+  color: rgb(5, 3, 3);
   font-size: 20px;
   width: 50px;
   border: none;
-  background: rgb(10, 7, 24);
+  background: rgb(240, 238, 247);
 }

@@ -4,7 +4,7 @@ import { cartActions } from "./cart-clice.js";
 export const fetchData=()=>{
     return async(dispatch)=>{
       const fetchHandler= async()=>{
-      const res = await fetch('https://ephy-reduxhttp-default-rtdb.firebaseio.com/')
+      const res = await fetch('https://ephy-reduxhttp-default-rtdb.firebaseio.com/cartItems.json')
       const data = await res.json()
       return data;  
     
@@ -36,15 +36,14 @@ export const sendCartData = (cart)=>{
 const sendRequest = async()=>{
     //send state as sending request
     
-  // const res = await fetch(
-    
-  //   'https://ephy-reduxhttp-default-rtdb.firebaseio.com/cartItems.json',{
-  //   method:'PUT',
-  //   body: JSON.stringify(cart),
-  // }
+  const res = await fetch(
+    'https://ephy-reduxhttp-default-rtdb.firebaseio.com/cartItems.json',{
+    method:'PUT',
+    body: JSON.stringify(cart),
+  }
   
-  // );
-  // const data = await res.json();
+  );
+  const data = await res.json();
   //send state as the request successful
   dispatch(uiActions.showNotification({
     open:true,
