@@ -43,7 +43,7 @@ const sendRequest = async()=>{
   }
   
   );
-  const data = await res.json();
+  //const data = await res.json();
   //send state as the request successful
   dispatch(uiActions.showNotification({
     open:true,
