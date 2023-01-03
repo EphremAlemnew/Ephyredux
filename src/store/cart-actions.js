@@ -36,13 +36,13 @@ export const sendCartData = (cart)=>{
 const sendRequest = async()=>{
     //send state as sending request
     
-  const res = await fetch(
-    'https://ephy-reduxhttp-default-rtdb.firebaseio.com/cartItems.json',{
-    method:'PUT',
-    body: JSON.stringify(cart),
-  }
+//   const res = await fetch(
+//     'https://ephy-reduxhttp-default-rtdb.firebaseio.com/cartItems.json',{
+//     method:'PUT',
+//     body: JSON.stringify(cart),
+//   }
   
-  );
+//   );
   //const data = await res.json();
   //send state as the request successful
   dispatch(uiActions.showNotification({
